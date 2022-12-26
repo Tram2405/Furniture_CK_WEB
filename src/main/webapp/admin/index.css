@@ -1,0 +1,47 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Alexandria:wght@600&display=swap');
+
+.header-section{
+	width: 100%;
+	height: 100vh;
+	background: url("../img/header.png");
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.header-heading{
+	font-size: 90px;
+	text-transform: capitalize;
+	color: #ffffff;
+}
+
+.header-heading span{
+    color: #eccc68;
+}
+
+.text-pr{
+	font-family: 'Alexandria', sans-serif;
+}
+
+.text-center{
+	text-align: center;
+}
+
+.img-curve{
+    border-radius: 10px;
+
+}
+
+
+.sm{
+	font-size: 1rem;
+    
+}
+
+.crd-ho:hover{
+	background-color: #f1f2f6;
+}
+
+

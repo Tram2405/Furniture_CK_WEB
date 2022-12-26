@@ -1,0 +1,148 @@
+@charset "UTF-8";
+
+
+.form-section{
+	width: 100%;
+	height: 100vh;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #ffffff;
+}
+
+.form-container{
+	width: 60%;
+	min-width: 300px;
+	height: 80vh;
+	overflow: hidden;
+	z-index: flex;
+	background: white;
+	display: flex;
+	box-shadow: 0 0 100px rgba(0,0,0,0.5 );
+}
+
+.form-img{
+	width: 40%;
+	height: 100%;
+	object-fit: cover;
+    	
+}
+
+.form{
+	width: 60%;
+	padding: 20px 40px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.form-heading{
+	font-size: 35px;
+	margin-bottom: 20px;
+
+}
+
+input{
+	width: 100%;
+	height: 40px;
+	border: 1px solid #7f8c8d;
+	margin: 5px 0;
+	padding: 5px;
+	line-height: 40px;
+	font-family: 'lato', sans-serif;
+	color: #353b48;
+	outline: none;
+	border-radius: 5px;
+}
+
+::placeholder{
+	color: #57606f;
+	text-transform: capitalize;
+}
+
+input:focus {
+	border: 2px solid #eccc68;
+}
+
+input:focus::placeholder{
+	color: #eccc68;
+}
+
+.error{
+	display: block;
+	font-size: 1rem;
+	color: #ff4757;
+	margin: 5px 0;
+	text-transform: capitalize;
+	font-family: 'lato', sans-serif;
+	user-select: none;
+	opacity: 0;
+	
+}
+
+.error.show{
+	opacity: 1;
+}
+
+#tc{
+	-webkit-appearance:none;
+	width: 15px;
+	height: 15px;
+	padding: 0;
+	border: 1px solid #dfe4ea;
+	cursor: pointer;
+	position: relative;
+	margin-top: 10px;
+	margin-bottom: 0;
+}
+
+#tc:checked{
+	background: #eccc68;
+}
+
+#tc:before{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background: url("../img/check.png");
+	background-size: contain;
+	}
+#tc:checked:before{
+	display: block;
+}	
+
+.tc-text{
+	margin-left: 5px;
+	font-size: .9rem;
+	font-family: 'lato', sans-serif;
+}
+
+.tc-text a{
+	color: black;
+}
+	
+
+.submit-btn{
+	display: block;
+	margin: 20px 0;
+	width: 100px;
+	padding: .8rem 0;
+	border-radius: 4px;
+	background: #eccc68;
+    color: white;
+    font-family: 'Kurale', serif;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1rem;
+	
+}
+
+.other-form-link{
+	font-family: 'lato', sans-serif;
+	color: black;
+	font-size: .9rem;
+}
